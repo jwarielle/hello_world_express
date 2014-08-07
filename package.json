@@ -1,8 +1,0 @@
-{
-  "name": "hello-world-app",
-  "version": "0.0.0",
-  "description": "simple static page express app",
-  "dependencies": {
-    "express": "^4.8.0"
-  }
-}
