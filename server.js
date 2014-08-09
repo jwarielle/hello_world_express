@@ -3,8 +3,14 @@ var http = require('http');
 
 var app = express();
 
-app.get('/about', function(request, response) {
-	response.send('./views/about.html');
+app.get('/', function(request, response) {
+	response.sendfile('./views/index.html');
 });
 
-app.listen(3000);
+app.use(express.static(__dirname + '/static'));
+
+var server = http.createServer(app);
+
+server.listen(3000, function() {
+	console.log('server running');
+});

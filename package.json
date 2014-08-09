@@ -1,6 +1,7 @@
 {
   "name": "hello-world-app",
   "version": "0.0.0",
+  "main": "fruit.js",
   "description": "simple static page express app",
   "dependencies": {
     "express": "^4.8.0"
