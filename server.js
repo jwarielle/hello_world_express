@@ -3,11 +3,11 @@ var http = require('http');
 
 var app = express();
 
-app.get('/', function(request, response) {
-	response.sendfile('./views/index.html');
-});
-
 app.use(express.static(__dirname + '/static'));
+
+app.get('/', function(request, response) {
+	response.sendfile('./static/index.html');
+});
 
 var server = http.createServer(app);
 
